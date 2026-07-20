@@ -1,7 +1,6 @@
 USE CartorioDB;
 GO
 
--- 1. Tabela de Clientes (Pessoas Físicas e Jurídicas)
 CREATE TABLE Funcionario(
     Id_Funcionario INT IDENTITY(1,1) PRIMARY KEY,
     Nome VARCHAR(150) NOT NULL,
