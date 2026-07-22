@@ -31,7 +31,8 @@ CREATE TABLE Indicador_Real(
     Endereco VARCHAR(200) NOT NULL,
     Area VARCHAR (50) NOT NULL,
     TIPO_Imovel VARCHAR (20) NOT NULL,
-    Qualidade VARCHAR(50)
+    Qualidade VARCHAR(50).
+    Natureza VARCHAR(100)
 );
 GO
 
@@ -58,6 +59,7 @@ CREATE TABLE Indicador_Pessoal(
     Qualidade VARCHAR(50),
     Documento VARCHAR(50),
     Numero_do_Ato VARCHAR(50),
+    Natureza VARCHAR(100)
     
     Id_Matricula INT NOT NULL,
     FOREIGN KEY (Id_Matricula) REFERENCES Matricula(Id_Matricula)
