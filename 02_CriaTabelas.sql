@@ -1,7 +1,6 @@
 USE CartorioDB;
 GO
 
--- 1. Tabela de Clientes (Pessoas Físicas e Jurídicas)
 CREATE TABLE Funcionario(
     Id_Funcionario INT IDENTITY(1,1) PRIMARY KEY,
     Nome VARCHAR(150) NOT NULL,
@@ -32,7 +31,8 @@ CREATE TABLE Indicador_Real(
     Endereco VARCHAR(200) NOT NULL,
     Area VARCHAR (50) NOT NULL,
     TIPO_Imovel VARCHAR (20) NOT NULL,
-    Qualidade VARCHAR(50)
+    Qualidade VARCHAR(50),
+    Natureza VARCHAR (100) NOT NULL,
 );
 GO
 
@@ -58,7 +58,7 @@ CREATE TABLE Indicador_Pessoal(
     Tipo_de_Ato VARCHAR(100),
     Qualidade VARCHAR(50),
     Documento VARCHAR(50),
-    Numero_do_Ato VARCHAR(50),
+    Natureza VARCHAR(100),
     
     Id_Matricula INT NOT NULL,
     FOREIGN KEY (Id_Matricula) REFERENCES Matricula(Id_Matricula)

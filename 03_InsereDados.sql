@@ -1,3 +1,0 @@
-USE CartorioDB;
-GO
-
