@@ -1,9 +1,7 @@
 USE CartorioDB;
 GO
 
-----------------------------------------------------
--- FUNCIONÁRIOS
-----------------------------------------------------
+
 
 INSERT INTO Funcionario (Nome)
 VALUES
@@ -12,9 +10,6 @@ VALUES
 ('Carlos Souza');
 GO
 
-----------------------------------------------------
--- LIVROS
-----------------------------------------------------
 
 INSERT INTO Livro (Tipo_Livro, Faixa_Matricula)
 VALUES
@@ -22,9 +17,6 @@ VALUES
 ('Livro 3 - Registro Auxiliar', '501 a 1000');
 GO
 
-----------------------------------------------------
--- ACESSO DOS FUNCIONÁRIOS
-----------------------------------------------------
 
 INSERT INTO Acesso_Funcionario (Id_Funcionario, Id_Livro)
 VALUES
@@ -34,9 +26,7 @@ VALUES
 (3,2);
 GO
 
-----------------------------------------------------
--- INDICADORES REAIS
-----------------------------------------------------
+
 
 INSERT INTO Indicador_Real
 (Endereco, Area, Tipo_Imovel, Qualidade, Natureza)
@@ -45,9 +35,7 @@ VALUES
 ('Av. Brasil, 500', '600 m²', 'Terreno', 'Urbano', 'Averbação');
 GO
 
-----------------------------------------------------
--- MATRÍCULAS
-----------------------------------------------------
+
 
 INSERT INTO Matricula
 (Numero_Matricula, Id_Livro, Id_Indicador_Real)
@@ -56,11 +44,9 @@ VALUES
 ('MAT0002', 2, 2);
 GO
 
-----------------------------------------------------
--- INDICADORES PESSOAIS
-----------------------------------------------------
 
--- Matrícula 1
+
+
 INSERT INTO Indicador_Pessoal
 (Nome_Participante, Percentual_Participacao, Qualidade,
 Documento, Numero_do_Ato, Natureza, Id_Matricula)
@@ -71,7 +57,7 @@ VALUES
 ('Anderson Andrade',100.00,'Adquirente',
 '111.222.333-44','1','Registro',1);
 
--- Matrícula 2
+
 INSERT INTO Indicador_Pessoal
 (Nome_Participante, Percentual_Participacao, Qualidade,
 Documento, Numero_do_Ato, Natureza, Id_Matricula)
